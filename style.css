@@ -1,0 +1,202 @@
+/* reset */
+html, body, h1, p, h2, wiki {
+    padding: 0;
+    margin: 0;
+}
+figure{
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+img {
+    width: 100%
+    height: auto;
+}
+/* Styles */
+/* Typography */
+body {
+    font-family: Courier new, serif;
+    font-size: 15px;
+    padding: 15px;
+    padding-right:
+}
+h1 {
+    font-weight: normal;
+    font-size:15px; 
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 15px
+}
+.menu{
+    color:black;
+    font-size: 15px;
+}
+nav ul {
+    margin-right: -40px;
+}
+nav h1 { 
+margin-left: -40px}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 2px 25px; 
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color:gray;
+    transition: .3;
+}
+/* Typographie Ende */
+/* header */
+header {
+    padding-top: 1em;
+    padding-bottom: 2em
+}
+/* main */
+.images {
+    display: grid;
+    grid-gap: 80px;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 40px;
+    padding-right: 15px;
+    margin: 30px
+}
+    
+/* main Ende */
+/* about */
+.main {
+    margin-bottom: 28em;
+    margin-top: 17em;
+    display:flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+.about-text p{
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.about-text a{
+    color: black;
+    font-weight: normal;
+    font-size: 15px;
+}
+.about-text a:hover{
+    color: gray;
+    transition: .3;   
+}
+.footer {
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+}
+
+/* about Ende */
+/* contact */
+.contact-text{
+    width: 550px;
+}
+
+.main {
+    margin-bottom: 28em;
+    margin-top: 17em;
+    display:flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+.contact-text p{
+    letter-spacing: 1px;
+    line-height: 11px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contact-text a{
+    color: black;
+    font-weight: normal;
+    font-size: 15px;
+}
+.contact-text a:hover{
+    color: gray;
+    transition: .3;   
+}
+.footer {
+    text-align:center;
+    font-size: 12px;
+    width: 100%;
+
+}
+/* contact Ende */
+/*mediascreen*/
+
+@media screen and (max-width: 900px) {
+	.images { 
+		grid-template-columns: repeat(1 ,1fr);
+        grid-gap: 20px;
+	}
+    .img4, .img3, .img2 {
+        grid-column: 1 / span 1; 
+    }
+}
+
+@media screen and (max-width:900px) {
+    .text {
+        grid-template-columns: repeat(1,1fr);
+    }
+    body {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .start p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    h1 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media screen and (max-width:900px) {
+    .start p{
+        padding-right: 0em;
+}
+    .text {
+        padding-right: 0em;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .footer p {
+        padding-bottom: 0rem;
+    }
+    .footer a {
+        padding-top: 0rem;
+    }
+    .umbruch {
+        padding-bottom: 2rem;
+    }
+}
